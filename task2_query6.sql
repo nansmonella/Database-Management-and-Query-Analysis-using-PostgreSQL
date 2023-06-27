@@ -1,3 +1,6 @@
+--Find best sellers of Q1 - 2018 (between January 1st - April 1st). 
+--Best sellers are who sold at least 50 items in each month of Q1 2018. 
+--Show seller id, total earned using order item prices in Q1, with descending order for total earned 
 with januaryMonth as (
 	select 
 		oi.seller_id, 
