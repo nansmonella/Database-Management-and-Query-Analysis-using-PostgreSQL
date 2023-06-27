@@ -1,3 +1,7 @@
+--Window functions:
+--List the product ids, total sales (from order items table), product category names and product’s rank when ranked by total sales for each grouping formed by product category names. 
+--Restrict your attention to those products with a total number of sales more than 10, inclusive.
+
 with without_null as (
 	select 
 		*
