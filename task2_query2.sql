@@ -1,3 +1,7 @@
+--Find health product (beleza saude) sellers from Curitiba who ships the products quickly. 
+--If a seller shippes the orders in at most 2 days on average, the seller works fast. 
+--Show results seller id and avg duration, with descending order for avg duration.
+
 SELECT 
     io.seller_id, 
     AVG(EXTRACT(EPOCH FROM (o.order_delivered_carrier_date - o.order_purchase_timestamp)) / 86400) AS the_duration
