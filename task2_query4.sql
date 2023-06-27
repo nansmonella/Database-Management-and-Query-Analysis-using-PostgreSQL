@@ -1,3 +1,6 @@
+--List top rated 5 sellers in Sao Paulo for auto (automotivo) products. 
+--The sellers must have at least 10 reviews. Show seller id, avg rating and review count, with descending order for avg rating 
+
 select 
 	oi.seller_id, COUNT(*) AS review_count,
     AVG(or2.review_score) AS avg_rating
