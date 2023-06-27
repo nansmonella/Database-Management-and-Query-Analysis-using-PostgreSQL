@@ -1,3 +1,9 @@
+--Cross tabulations:
+--Write a single SQL query that computes the statistics present in a cross tabulation over sellers and months (use shipping limit date) on order items table. 
+--The aggregate reported should report total freight values for each seller-month pair in 2018. 
+--In addition to seller-month pairs, the results should contain seller yearly total freight values, and also total freight value of all sellers and all months at the end.
+--Each result row should contain seller id, month and total freight value.
+
 WITH seller_monthly_freight AS (
     SELECT
         seller_id,
