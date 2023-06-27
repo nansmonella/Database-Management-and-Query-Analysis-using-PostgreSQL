@@ -1,3 +1,5 @@
+--CREATING TABLES
+
 create table if not exists product_category (
 	product_category_name VARCHAR(75),
 	product_category_name_english VARCHAR(75)
