@@ -1,3 +1,8 @@
+--In order items table, there can be multiple entries for an order id, order item id pair. 
+--This indicates that these items are bought together in a single shopping cart. 
+--For each month, list the highest shopping cart totals and the customers who ordered the items in the shopping cart. 
+--List customer id, year, month, max total for month, with ascending order for year & month 
+
 WITH monthly_order_totals AS (
     SELECT 
         EXTRACT(YEAR FROM order_purchase_timestamp) AS year,
