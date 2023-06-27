@@ -1,3 +1,5 @@
+--List city of customers who buy products only with voucher.
+
 select distinct 
 	c.customer_city
 from 
