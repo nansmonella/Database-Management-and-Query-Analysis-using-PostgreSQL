@@ -1,3 +1,6 @@
+--List product categories of products that are delivered later than expected time for orders from Rio de Janiero in summer 2018 (between June 1st - September 1st). 
+--List product category name and late delivery count, with descending order by late delivery count, ascending order for product category name
+
 select 
 	p.product_category_name, 
 	COUNT(*) AS late
